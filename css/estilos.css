@@ -1,0 +1,334 @@
+*{
+	margin: 0px;
+	padding: 0px;
+}
+
+@media (max-width:900px){
+	#contenedor1{
+		display:-webkit-flex;
+		display:-ms-flex;
+		display:flex;
+		flex-direction:column;
+		align-items:center;
+	}
+	#cuerpo{
+		display:-webkit-flex;
+		display:-ms-flex;
+		display:flex;
+		flex-direction:column;		
+	}
+	
+	#cuerpo2{
+		display:-webkit-flex;
+		display:-ms-flex;
+		display:flex;
+		flex-direction:column;
+		align-items:center;
+	}
+		
+	.paisaje1 img{width:700px; padding: 20px 0px;}
+	.paisaje2 img{width:700px;}
+	.paisaje3 img{width:700px; padding: 20px 0px;}
+	.paisaje4 img{width:700px;}
+	.paisaje5 img{width:700px; padding: 20px 10px;}
+	.paisaje6 img{width:700px; padding-bottom:20px;}
+	
+	#cuerpo3{
+		display:-webkit-flex;
+		display:-ms-flex;
+		display:flex;
+		flex-direction:column;
+		align-items:center;
+	}
+		
+	.retrato1 img{width:700px; padding: 20px 0px;}
+	.retrato2 img{width:700px;}
+	.retrato3 img{width:700px; padding: 20px 0px;}
+	.retrato4 img{width:700px;}
+	.retrato5 img{width:700px; padding: 20px 10px;}
+	.retrato6 img{width:700px; padding-bottom:20px;}
+	
+	.piepagina{
+		 display:-webkit-flex;
+	     display:-ms-flex;
+	     display:flex;
+		 flex-direction:column;
+		 }
+	 div[class*="bloque"]{
+		 width:100%; 
+	 }
+
+	
+}
+ 
+@media (min-width:900px){
+	#contenedor1{
+		 display:-webkit-flex;
+	     display:-ms-flex;
+	     display:flex;
+	     justify-content:space-around;
+	     align-items:center;
+	}
+	
+	#cuerpo{
+		display:-webkit-flex;
+		display:-ms-flex;
+		display:flex;
+		flex-wrap:wrap;
+		justify-content:center;
+		}
+	.imagen2 img{height:220px;}
+	.imagen3 img{height:220px;}
+	
+	.piepagina{
+		 display:-webkit-flex;
+	     display:-ms-flex;
+	     display:flex;
+		 }
+	 div[class*="bloque"]{
+		 width:25%;
+	 }
+	 #cuerpo2{
+		 display:-webkit-flex;
+		 display:-ms-flex;
+		 display:flex;
+		 flex-wrap:wrap;
+		 justify-content:space-around;
+		 padding:10px;
+	 }	
+     .paisaje1 img{height:150px; width:260px;}
+	 .paisaje2 img{height:150px;}
+	 .paisaje3 img{height:150px;}
+	 .paisaje4 img{height:180px; width:260px;}
+	 .paisaje5 img{height:145px;}
+	 .paisaje6 img{height:180px;}		
+	 
+	  div[class*="paisaje"]{
+		 width;33.3px;
+		 padding-bottom:15px;
+	 }
+	 
+	  #cuerpo3{
+		 display:-webkit-flex;
+		 display:-ms-flex;
+		 display:flex;
+		 flex-wrap:wrap;
+		 justify-content:space-around;
+		 padding:10px;
+	 }	
+     .retrato1 img{height:150px; width:260px;}
+	 .retrato2 img{height:150px;}
+	 .retrato3 img{height:180px;}
+	 .retrato4 img{height:180px; width:260px;}
+	 .retrato5 img{height:180px;}
+	 .retrato6 img{height:180px;}		
+	 
+	  div[class*="retrato"]{
+		 width;33.3px;
+		 padding-bottom:15px;
+	 }
+}
+	 
+ 
+body{
+	background:#02010a;
+} 
+ 
+#contenido{
+	width:900px;
+	margin:auto;
+	font-family: 'Dancing Script', cursive;
+}
+/************************************************************************
+                    titulo y menu principal
+************************************************************************/
+#contenedor1{
+	background:#5b7989;
+	height:100px;
+	border-radius:10px 10px 0 0;
+	color:white;
+	text-shadow:2px 2px #02010a;
+	text-transform:capitalize;
+	animation:contenedor1 3s;
+    position:relative;
+}
+
+.menu li{
+	display:inline;
+	padding-right:20px;
+	}
+	
+li a{
+	color:white;
+}
+
+/***********************************************************************
+                     cabecera
+***********************************************************************/
+
+#cabecera{
+	background:#82c3a6;
+}
+
+.imagen1 img{ 
+	display:block;
+	margin:auto;
+	padding:10px;
+    height:400px;	
+}
+
+/***********************************************************************
+                   cuerpo
+************************************************************************/
+
+#cuerpo{
+	background:#d5c75f;
+     	width:900px;
+		text-decoration:underline;
+}
+
+.imagen2{
+	padding:10px;
+}
+.imagen2 img{
+	display:block;
+	margin:auto;
+	box-shadow:2px 2px #02010a;
+	-webkit-box-shadow:2px 2px #02010a;
+	-moz-box-shadow:2px 2px #02010a;
+	transition-property:rotate 0.5s;
+	-webkit-transition-property:rotate 0.5s;
+	-moz-transition-property:rotate 0.5s;
+}
+
+.imagen2 img:hover{
+	transform:rotate(10deg);
+	transition:0.5s;
+}
+
+.imagen3{
+	padding:10px;
+}
+.imagen3 img{
+	display:block;
+	margin:auto;
+	box-shadow:2px 2px #02010a;
+	-webkit-box-shadow:2px 2px #02010a;
+	-moz-box-shadow:2px 2px #02010a;	
+	transition-property:translate;
+	-webkit-transition-property:translate;
+	-moz-transition-property:translate;
+	-webkit-transition-duration:1s;
+}
+
+.imagen3 img:hover{
+	transform:translate(20px, -5px);
+    transition:1s;	
+}
+
+h2{
+	text-align:center;
+}
+
+/*****************************************************************
+                   cuerpo paisajes
+*****************************************************************/
+#cuerpo2{
+	background:#d5c75f;
+}
+
+.paisaje1 img{
+	-webkit-filter:blur(10px);
+	-ms-filter:blur(10px);
+	filter:blur(10px);
+}
+
+.paisaje4 img{
+	-webkit-filter:grayscale(100%);
+	-ms-filter:grayscale(100)%;
+	filter:grayscale(100%);
+	}
+	
+.paisaje2 img, .paisaje6 img{
+	-webkit-filter:grayscale(100%);
+	-ms-filter:grayscale(100)%;
+	filter:grayscale(100%);
+}
+
+.paisaje3 img{
+	-webkit-filter:sepia(90%);
+	-ms-filter:sepia(90%);
+	filter:sepia(90%);
+}
+
+/**********************************************************************
+                             cuerpo retratos
+**********************************************************************/
+#cuerpo3{
+	background:#d5c75f;
+}
+
+.retrato1 img{
+	-webkit-filter:blur(10px);
+	-ms-filter:blur(10px);
+	filter:blur(10px);
+}
+
+.retrato4 img{
+	-webkit-filter:grayscale(100%);
+	-ms-filter:grayscale(100)%;
+	filter:grayscale(100%);
+	}
+	
+.retrato2 img, .retrato6 img{
+	-webkit-filter:grayscale(100%);
+	-ms-filter:grayscale(100)%;
+	filter:grayscale(100%);
+}
+
+.retrato3 img{
+	-webkit-filter:sepia(90%);
+	-ms-filter:sepia(90%);
+	filter:sepia(90%);
+}
+
+
+/***********************************************************************
+                 piepagina
+***********************************************************************/
+.piepagina{
+	background:#c6d5c5;
+}
+
+.piepagina h3{
+	padding:10px;
+}
+
+.piepagina p{
+	padding:10px;
+}
+
+.bloque3 img{
+	height:25px;
+	padding:5px;
+	float:left;
+	border-radius:60px 60px 60px 60px;
+}
+
+.bloque3 p{
+     padding:10px;	
+	 text-align:left;
+	 font-size:16px;
+}
+.bloque4 img{
+	height:25px;
+	padding:8px;
+	float:left;
+	border-radius:60px 60px 60px 60px;
+}
+
+@keyframes contenedor1{
+	0%{margin-top:150%;}
+	60%{margin-top:-5%;}
+	100%{margin-top:0%;}
+}
